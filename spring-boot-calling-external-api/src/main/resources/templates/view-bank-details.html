@@ -1,0 +1,78 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:insert="index.html"></div>
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+
+        <table class="table table-bordered" style="margin-top:50px" id="table">
+            <tbody>
+            <tr>
+                <td>MICR</td>
+                <td th:text="${bankInfo.mICR}"></td>
+            </tr>
+            <tr>
+                <td>BRANCH</td>
+                <td th:text="${bankInfo.bRANCH}"></td>
+            </tr>
+            <tr>
+                <td>ADDRESS</td>
+                <td th:text="${bankInfo.aDDRESS}"></td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td th:text="${bankInfo.sTATE}"></td>
+            </tr>
+            <tr>
+                <td>CONTACT</td>
+                <td th:text="${bankInfo.cONTACT}"></td>
+            </tr>
+            <tr>
+                <td>UPI</td>
+                <td th:text="${bankInfo.uPI}"></td>
+            </tr>
+            <tr>
+                <td>RTGS</td>
+                <td th:text="${bankInfo.rTGS}"></td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td th:text="${bankInfo.cITY}"></td>
+            </tr>
+            <tr>
+                <td>CENTRE</td>
+                <td th:text="${bankInfo.cENTRE}"></td>
+            </tr>
+            <tr>
+                <td>DISTRICT</td>
+                <td th:text="${bankInfo.dISTRICT}"></td>
+            </tr>
+            <tr>
+                <td>NEFT</td>
+                <td th:text="${bankInfo.nEFT}"></td>
+            </tr>
+            <tr>
+                <td>IMPS</td>
+                <td th:text="${bankInfo.iMPS}"></td>
+            </tr>
+            <tr>
+                <td>ISO3166</td>
+                <td th:text="${bankInfo.iSO3166}"></td>
+            </tr>
+            <tr>
+                <td>BANK</td>
+                <td th:text="${bankInfo.bANK}"></td>
+            </tr>
+            <tr>
+                <td>BANKCODE</td>
+                <td th:text="${bankInfo.bANKCODE}"></td>
+            </tr>
+            <tr>
+                <td>IFSC</td>
+                <td th:text="${bankInfo.iFSC}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+</html>
